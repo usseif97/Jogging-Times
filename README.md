@@ -68,7 +68,11 @@ gem "groupdate"
         "password": "adminpassword",   
         "name": "admintest"   
         }   
-  Response "header": JWT token    
+  ```
+
+  Response "header": JWT token
+```
+   
   
 ## Login   
   POST: /login     
