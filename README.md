@@ -144,9 +144,9 @@ ___
 
 # Jogs
 ## Get all jogs  
-  GET: /jogs    
-  Parameters: Authorization: JWT token     
+  GET: /jogs
   ```
+  Parameters: Authorization: JWT token     
 Response:[
     {
         "id": 11,
@@ -170,9 +170,9 @@ Response:[
 ```     
 
 ## Get a jog    
-  GET: /users/:id      
+  GET: /users/:id
+    ```          
   Parameters: Authorization: JWT token  
-    ```       
 Response: {
     "id": 11,
     "date": "2023-07-14",
@@ -185,14 +185,14 @@ Response: {
 ```     
 
 ## Add  jog    
-  POST: /users/      
+  POST: /users/   
+    ```     
   Parameters: Authorization: JWT token     
   body: {
       "date": "13/7/2023",
       "distance": 8888,
       "time": 8
       }
-  ```     
 Response: {
     "id": 13,
     "date": "2023-07-14",
@@ -204,14 +204,14 @@ Response: {
 }
 ```         
 ## Update jog    
-  PUT: /jogs/:id      
+  PUT: /jogs/:id
+  ```      
   Parameters: Authorization: JWT token     
   body: {
       "date": "13/7/2023",
       "distance": 8888,
       "time": 8
       }
-  ```      
 Response: {
     "user_id": 5,
     "time": 4,
@@ -224,9 +224,9 @@ Response: {
 ```      
 
 ## Delete a jog      
-  DELETE: /jogs/:id      
+  DELETE: /jogs/:id
+  ```           
   Parameters: Authorization: JWT token
-  ```        
 Response: {
     "id": 11,
     "date": "2023-07-14",
@@ -239,9 +239,9 @@ Response: {
 ```            
 
 ## Get average distances per week    
-  GET: /jogs/average_distance       
+  GET: /jogs/average_distance
+  ```       
   Parameters: Authorization: JWT token
-  ```      
 Response: {
     "2023-07-09": 28,
     "2023-07-16": 20
@@ -249,9 +249,9 @@ Response: {
 ```      
 
 ## Get average speed per week    
-  GET: /jogs/average_speed    
-  Parameters: Authorization: JWT token
+  GET: /jogs/average_speed
   ```        
+  Parameters: Authorization: JWT token
 Response:{
     "distance": {
         "2023-07-09": 28,
@@ -269,13 +269,13 @@ Response:{
 ```       
 
 ## Filter by date    
-  POST: /jogs/filter      
+  POST: /jogs/filter
+  ```        
   Parameters: Authorization: JWT token
   body: {
       "from": "13/7/2023",
       "to": "14/7/2023",
       }
-  ```    
 Response: [
     {
         "id": 12,
