@@ -1,12 +1,3 @@
-![10](https://github.com/usseif97/Jogging-Times/assets/47598030/74bf2b18-0492-4eb1-a475-94912c5148d4)
-![9](https://github.com/usseif97/Jogging-Times/assets/47598030/b7dba7d1-ede9-45dd-9d4b-48401084749a)
-![11](https://github.com/usseif97/Jogging-Times/assets/47598030/535a5ccd-22f7-4473-b138-ec31beb111b7)
-![10](https://github.com/usseif97/Jogging-Times/assets/47598030/25ee5556-c0f6-4dc4-a03c-8ffdefdd129b)
-![9](https://github.com/usseif97/Jogging-Times/assets/47598030/86386b9e-eb28-404d-9223-093a44b2eefc)
-![8](https://github.com/usseif97/Jogging-Times/assets/47598030/929a290c-fe5a-41e5-80fc-3e2c8e82d029)
-![7](https://github.com/usseif97/Jogging-Times/assets/47598030/b267bb23-f88c-4212-9962-c656ef62985d)
-![6](https://github.com/usseif97/Jogging-Times/assets/47598030/1a1aa84b-d9e1-4b46-be1e-e623aade59d0)
-![5](https://github.com/usseif97/Jogging-Times/assets/47598030/efe069b0-1db6-4093-aa5a-781811ba79c4)
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -173,16 +164,28 @@ ___
 
 # Examples
 ![1](https://github.com/usseif97/Jogging-Times/assets/47598030/4954f2cb-bf24-4423-ba91-a597445aee07)    
-![2](https://github.com/usseif97/Jogging-Times/assets/47598030/0f3d7edd-542f-4cfc-9722-f03cb3e98d36)     
-![3](https://github.com/usseif97/Jogging-Times/assets/47598030/0c6d3abf-6882-40a7-8cd6-3bf430cb8bee)     
-![4](https://github.com/usseif97/Jogging-Times/assets/47598030/3c222b4f-1ba8-40bd-888b-b093b8876767)    
-![5](https://github.com/usseif97/Jogging-Times/assets/47598030/49158ad1-c5ed-48bb-b7c0-f0cd624d7e45)    
-![6](https://github.com/usseif97/Jogging-Times/assets/47598030/dbf19eaf-0b28-4eef-b895-e60f4e1d3e8a)      
-![7](https://github.com/usseif97/Jogging-Times/assets/47598030/9e8cb2a3-ead0-46fd-aa3a-c802fe8fae97)      
+   
+![2](https://github.com/usseif97/Jogging-Times/assets/47598030/0f3d7edd-542f-4cfc-9722-f03cb3e98d36)   
+   
+![3](https://github.com/usseif97/Jogging-Times/assets/47598030/0c6d3abf-6882-40a7-8cd6-3bf430cb8bee)  
+   
+![4](https://github.com/usseif97/Jogging-Times/assets/47598030/3c222b4f-1ba8-40bd-888b-b093b8876767)  
+   
+![5](https://github.com/usseif97/Jogging-Times/assets/47598030/49158ad1-c5ed-48bb-b7c0-f0cd624d7e45)  
+   
+![6](https://github.com/usseif97/Jogging-Times/assets/47598030/dbf19eaf-0b28-4eef-b895-e60f4e1d3e8a)  
+   
+![7](https://github.com/usseif97/Jogging-Times/assets/47598030/9e8cb2a3-ead0-46fd-aa3a-c802fe8fae97)  
+   
 ![8](https://github.com/usseif97/Jogging-Times/assets/47598030/914efdc3-aaae-458e-8d67-f3153971e444)    
-![9](https://github.com/usseif97/Jogging-Times/assets/47598030/d064d923-348e-410b-961b-ee743796ba8d)    
+   
+![9](https://github.com/usseif97/Jogging-Times/assets/47598030/d064d923-348e-410b-961b-ee743796ba8d)      
+   
 ![10](https://github.com/usseif97/Jogging-Times/assets/47598030/8bf75157-4abb-4bfe-ad2e-9e69a181bcaf)    
+   
 ![11](https://github.com/usseif97/Jogging-Times/assets/47598030/a0ef82fa-a361-44da-9030-27fe88a3e1f3)   
+
+# promote to Admin
 ![12](https://github.com/usseif97/Jogging-Times/assets/47598030/e626b6f3-6c19-4a91-868b-11e078ce2324)       
 
  
