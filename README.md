@@ -1,3 +1,12 @@
+![10](https://github.com/usseif97/Jogging-Times/assets/47598030/74bf2b18-0492-4eb1-a475-94912c5148d4)
+![9](https://github.com/usseif97/Jogging-Times/assets/47598030/b7dba7d1-ede9-45dd-9d4b-48401084749a)
+![11](https://github.com/usseif97/Jogging-Times/assets/47598030/535a5ccd-22f7-4473-b138-ec31beb111b7)
+![10](https://github.com/usseif97/Jogging-Times/assets/47598030/25ee5556-c0f6-4dc4-a03c-8ffdefdd129b)
+![9](https://github.com/usseif97/Jogging-Times/assets/47598030/86386b9e-eb28-404d-9223-093a44b2eefc)
+![8](https://github.com/usseif97/Jogging-Times/assets/47598030/929a290c-fe5a-41e5-80fc-3e2c8e82d029)
+![7](https://github.com/usseif97/Jogging-Times/assets/47598030/b267bb23-f88c-4212-9962-c656ef62985d)
+![6](https://github.com/usseif97/Jogging-Times/assets/47598030/1a1aa84b-d9e1-4b46-be1e-e623aade59d0)
+![5](https://github.com/usseif97/Jogging-Times/assets/47598030/efe069b0-1db6-4093-aa5a-781811ba79c4)
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,15 +31,22 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+  
+# Third party libraries
+ruby "3.2.2"       
+gem "rails", "~> 7.0.6"        
+gem "sqlite3", "~> 1.4"      
+gem 'devise'       
+gem 'devise-jwt'           
+gem 'jsonapi-serializer'          
+gem "groupdate"         
 
 # Authentication
   * devise  
      - Signup, implemented through devise registrations controller  
      - login & logout, implemented through devise sessions controller
   * devise-jwt
-      - handle token dispatch and authentication
-      - the token expires after 60 minutes 
-    
+      - handle token dispatch and authentication    
 
 # User
   * attributes   
@@ -40,11 +56,19 @@ Things you may want to cover:
       - role, user - manager - admin where each one have appropriate permissions   
       - jti, used to store the access token of the userto make sure it doesn't end up in the wrong hands         
 
-    * user: CRUD his own jogs     
-    * manager: CRUD users   
-    * admin: CRUD all jogs, CRUD users, CRUD managers   
+  * user: CRUD his own jogs        
+  * manager: CRUD users      
+  * admin: CRUD all jogs, CRUD users, CRUD managers   
+         
+# Jog    
+  * attributes      
+      - date        
+      - distance "Km"       
+      - time "hr"    
+      - user_id, foreign key that reference to User "belongs_to"   
    
-# API endpoints
+# API endpoints   
+
 # Registartion
 ## Signup
   POST: /signup            
@@ -53,7 +77,7 @@ Things you may want to cover:
         "password": "adminpassword",   
         "name": "admintest"   
         }   
-  Response: JWT token    
+  Response "header": JWT token    
   
 ## Login   
   POST: /login     
@@ -61,7 +85,7 @@ Things you may want to cover:
         "email": "admintest@test.com",    
         "password": "adminpassword"   
         }   
-  Response: JWT token   
+  Response "header": JWT token    
 
 ## Logout
   DELETE: /logout   
@@ -72,7 +96,6 @@ ___
 ## Get all users  
   GET: /users    
   Parameters: Authorization: JWT token     
-  Response: JWT token   
   
 ## Get a user    
   GET: /users/:id      
@@ -98,3 +121,69 @@ ___
   GET: /users/role/admin    
   Parameters: Authorization: JWT token      
 ___
+
+# Jogs
+## Get all jogs  
+  GET: /jogs    
+  Parameters: Authorization: JWT token     
+  Response "header": JWT token    
+  
+## Get a jog    
+  GET: /users/:id      
+  Parameters: Authorization: JWT token  
+
+## Add  jog    
+  POST: /users/      
+  Parameters: Authorization: JWT token
+  body: {
+      "date": "13/7/2023",
+      "distance": 8888,
+      "time": 8
+      }
+  
+## Update jog    
+  PUT: /jogs/:id      
+  Parameters: Authorization: JWT token     
+  body: {
+      "date": "13/7/2023",
+      "distance": 8888,
+      "time": 8
+      } 
+
+## Delete a jog      
+  DELETE: /jogs/:id      
+  Parameters: Authorization: JWT token        
+
+## Get average distances per week    
+  GET: /jogs/average_distance       
+  Parameters: Authorization: JWT token       
+
+## Get average speed per week    
+  GET: /jogs/average_speed    
+  Parameters: Authorization: JWT token   
+
+## Filter by date    
+  POST: /jogs/filter      
+  Parameters: Authorization: JWT token
+  body: {
+      "from": "13/7/2023",
+      "to": 8888,
+      }
+___   
+
+# Examples
+![1](https://github.com/usseif97/Jogging-Times/assets/47598030/4954f2cb-bf24-4423-ba91-a597445aee07)    
+![2](https://github.com/usseif97/Jogging-Times/assets/47598030/0f3d7edd-542f-4cfc-9722-f03cb3e98d36)     
+![3](https://github.com/usseif97/Jogging-Times/assets/47598030/0c6d3abf-6882-40a7-8cd6-3bf430cb8bee)     
+![4](https://github.com/usseif97/Jogging-Times/assets/47598030/3c222b4f-1ba8-40bd-888b-b093b8876767)    
+![5](https://github.com/usseif97/Jogging-Times/assets/47598030/49158ad1-c5ed-48bb-b7c0-f0cd624d7e45)    
+![6](https://github.com/usseif97/Jogging-Times/assets/47598030/dbf19eaf-0b28-4eef-b895-e60f4e1d3e8a)      
+![7](https://github.com/usseif97/Jogging-Times/assets/47598030/9e8cb2a3-ead0-46fd-aa3a-c802fe8fae97)      
+![8](https://github.com/usseif97/Jogging-Times/assets/47598030/914efdc3-aaae-458e-8d67-f3153971e444)    
+![9](https://github.com/usseif97/Jogging-Times/assets/47598030/d064d923-348e-410b-961b-ee743796ba8d)    
+![10](https://github.com/usseif97/Jogging-Times/assets/47598030/8bf75157-4abb-4bfe-ad2e-9e69a181bcaf)    
+![11](https://github.com/usseif97/Jogging-Times/assets/47598030/a0ef82fa-a361-44da-9030-27fe88a3e1f3)   
+![12](https://github.com/usseif97/Jogging-Times/assets/47598030/e626b6f3-6c19-4a91-868b-11e078ce2324)       
+
+ 
+
