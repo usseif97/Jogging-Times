@@ -38,7 +38,7 @@ Things you may want to cover:
       - email   
       - password   
       - role, user - manager - admin where each one have appropriate permissions   
-      - jti, used to store the access token of the userto make sure it doesn't end up in the wrong hands   
+      - jti, used to store the access token of the userto make sure it doesn't end up in the wrong hands         
 
     * user: CRUD his own jogs     
     * manager: CRUD users   
@@ -47,54 +47,54 @@ Things you may want to cover:
 # API endpoints
 # Registartion
 ## Signup
-  POST: /signup  
-  Body: "user":{
-        "email": "admintest@test.com",
-        "password": "adminpassword",
-        "name": "admintest"
-        }
-  Response: JWT token
+  POST: /signup            
+  Body: "user":{   
+        "email": "admintest@test.com",   
+        "password": "adminpassword",   
+        "name": "admintest"   
+        }   
+  Response: JWT token    
   
-## Login
-  POST: /login  
-  Body: "user":{
-        "email": "admintest@test.com",
-        "password": "adminpassword"
-        }
-  Response: JWT token
+## Login   
+  POST: /login     
+  Body: "user":{   
+        "email": "admintest@test.com",    
+        "password": "adminpassword"   
+        }   
+  Response: JWT token   
 
 ## Logout
-  DELETE: /logout  
-  Parameters: Authorization: JWT token  
+  DELETE: /logout   
+  Parameters: Authorization: JWT token     
 ___
 
 # Users
 ## Get all users  
-  GET: /users  
-  Parameters: Authorization: JWT token  
-  Response: JWT token
+  GET: /users    
+  Parameters: Authorization: JWT token     
+  Response: JWT token   
   
-## Get a user  
-  GET: /users/:id  
-  Parameters: Authorization: JWT token  
+## Get a user    
+  GET: /users/:id      
+  Parameters: Authorization: JWT token       
   
-## Update user 
-  PUT: /users/:id  
-  Parameters: Authorization: JWT token 
-  Body: "user":{
-        "email": "admintest@test.com",
-        "password": "adminpassword"
-        }
+## Update user    
+  PUT: /users/:id      
+  Parameters: Authorization: JWT token     
+  Body: "user":{   
+        "email": "admintest@test.com",   
+        "password": "adminpassword"   
+        }   
 
-## Delete a user  
-  DELETE: /users/:id  
-  Parameters: Authorization: JWT token  
+## Delete a user      
+  DELETE: /users/:id      
+  Parameters: Authorization: JWT token        
 
-## Make a user manager
-  GET: /users/role/manager
-  Parameters: Authorization: JWT token  
+## Make a user manager    
+  GET: /users/role/manager       
+  Parameters: Authorization: JWT token       
 
-## Make a user admin
-  GET: /users/role/admin
-  Parameters: Authorization: JWT token  
+## Make a user admin    
+  GET: /users/role/admin    
+  Parameters: Authorization: JWT token      
 ___
