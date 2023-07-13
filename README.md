@@ -62,6 +62,7 @@ gem "groupdate"
 
 # Registartion
 ## Signup
+```
   POST: /signup    
   Body: "user":{   
         "email": "admintest@test.com",   
@@ -81,9 +82,11 @@ Response: {
         "role": "user"
     }
 }
-   
-  
+```
+
+
 ## Login   
+```
   POST: /login
   Body: "user":{   
         "email": "admintest@test.com",    
@@ -102,44 +105,60 @@ Response: {
         "role": "user"
     }
 }
+```
 
 ## Logout
+```
   DELETE: /logout   
-  Parameters: Authorization: JWT token     
+  Parameters: Authorization: JWT token
+```    
 ___
 
 # Users
 ## Get all users  
+```
   GET: /users    
-  Parameters: Authorization: JWT token     
+  Parameters: Authorization: JWT token
+```   
   
-## Get a user    
+## Get a user   
+```
   GET: /users/:id      
-  Parameters: Authorization: JWT token       
+  Parameters: Authorization: JWT token
+```
   
 ## Update user    
+```
   PUT: /users/:id      
   Parameters: Authorization: JWT token     
   Body: "user":{   
         "email": "admintest@test.com",   
         "password": "adminpassword"   
         }   
+```
 
 ## Delete a user      
+```
   DELETE: /users/:id      
   Parameters: Authorization: JWT token        
+```
 
 ## Make a user manager    
+```
   GET: /users/role/manager       
   Parameters: Authorization: JWT token       
+```
 
 ## Make a user admin    
+```
   GET: /users/role/admin    
-  Parameters: Authorization: JWT token      
+  Parameters: Authorization: JWT token
+```
 ___
 
 # Jogs
 ## Get all jogs  
+```
   GET: /jogs
   Parameters: Authorization: JWT token     
 Response:[
@@ -162,8 +181,10 @@ Response:[
         "updated_at": "2023-07-13T23:29:31.589Z"
     }
 ]
+```
 
-## Get a jog    
+## Get a jog   
+```
   GET: /users/:id
   Parameters: Authorization: JWT token  
 Response: {
@@ -175,8 +196,10 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:29:07.787Z"
 }
+```
 
 ## Add  jog    
+```
   POST: /users/   
   Parameters: Authorization: JWT token     
   body: {
@@ -193,8 +216,10 @@ Response: {
     "created_at": "2023-07-13T23:31:36.767Z",
     "updated_at": "2023-07-13T23:31:36.767Z"
 }
+```
 
 ## Update jog    
+```
   PUT: /jogs/:id
   Parameters: Authorization: JWT token     
   body: {
@@ -211,8 +236,10 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
+```
 
-## Delete a jog      
+## Delete a jog   
+```
   DELETE: /jogs/:id
   Parameters: Authorization: JWT token
 Response: {
@@ -224,16 +251,20 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
+```
 
 ## Get average distances per week    
+```
   GET: /jogs/average_distance
   Parameters: Authorization: JWT token
 Response: {
     "2023-07-09": 28,
     "2023-07-16": 20
 }
+```
 
-## Get average speed per week    
+## Get average speed per week  
+```
   GET: /jogs/average_speed
   Parameters: Authorization: JWT token
 Response:{
@@ -250,8 +281,10 @@ Response:{
         2
     ]
 }
+```
 
 ## Filter by date    
+```
   POST: /jogs/filter
   Parameters: Authorization: JWT token
   body: {
@@ -278,6 +311,7 @@ Response: [
         "updated_at": "2023-07-13T23:31:36.767Z"
     }
 ]
+```
 ___   
 
 # Examples
