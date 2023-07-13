@@ -106,6 +106,7 @@ Response: {
     }
 }
 ```
+
 ## Logout
   DELETE: /logout   
   Parameters: Authorization: JWT token     
@@ -166,7 +167,8 @@ Response:[
         "updated_at": "2023-07-13T23:29:31.589Z"
     }
 ]
-```  
+```
+
 ## Get a jog    
   GET: /users/:id      
   Parameters: Authorization: JWT token  
@@ -200,8 +202,7 @@ Response: {
     "created_at": "2023-07-13T23:31:36.767Z",
     "updated_at": "2023-07-13T23:31:36.767Z"
 }
-```  
-  
+```         
 ## Update jog    
   PUT: /jogs/:id      
   Parameters: Authorization: JWT token     
@@ -220,7 +221,7 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
-```  
+```      
 
 ## Delete a jog      
   DELETE: /jogs/:id      
@@ -235,7 +236,7 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
-```        
+```           
 
 ## Get average distances per week    
   GET: /jogs/average_distance       
@@ -245,7 +246,7 @@ Response: {
     "2023-07-09": 28,
     "2023-07-16": 20
 }
-```  
+```     
 
 ## Get average speed per week    
   GET: /jogs/average_speed    
@@ -265,7 +266,7 @@ Response:{
         2
     ]
 }
-```  
+```      
 
 ## Filter by date    
   POST: /jogs/filter      
@@ -295,7 +296,7 @@ Response: [
         "updated_at": "2023-07-13T23:31:36.767Z"
     }
 ]
-```  
+```      
 ___   
 
 # Examples
