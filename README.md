@@ -158,7 +158,7 @@ ___
   Parameters: Authorization: JWT token
   body: {
       "from": "13/7/2023",
-      "to": 8888,
+      "to": "14/7/2023",
       }
 ___   
 
