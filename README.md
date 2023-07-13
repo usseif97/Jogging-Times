@@ -68,9 +68,20 @@ gem "groupdate"
         "password": "adminpassword",   
         "name": "admintest"   
         }   
+  header:  JWT token    
   ```
-
-  Response "header": JWT token
+Response: {
+    "status": {
+        "code": 200,
+        "message": "Signed up successfully."
+    },
+    "data": {
+        "id": 5,
+        "email": "youssefali@test.com",
+        "name": "youssefAli",
+        "role": "user"
+    }
+}
 ```
    
   
@@ -80,8 +91,21 @@ gem "groupdate"
         "email": "admintest@test.com",    
         "password": "adminpassword"   
         }   
-  Response "header": JWT token    
-
+  header:  JWT token    
+  ```
+Response: {
+    "status": {
+        "code": 200,
+        "message": "Signed up successfully."
+    },
+    "data": {
+        "id": 5,
+        "email": "youssefali@test.com",
+        "name": "youssefAli",
+        "role": "user"
+    }
+}
+```
 ## Logout
   DELETE: /logout   
   Parameters: Authorization: JWT token     
@@ -121,11 +145,42 @@ ___
 ## Get all jogs  
   GET: /jogs    
   Parameters: Authorization: JWT token     
-  Response "header": JWT token    
-  
+  ```
+Response:[
+    {
+        "id": 11,
+        "date": "2023-07-14",
+        "distance": 14,
+        "time": 3,
+        "user_id": 5,
+        "created_at": "2023-07-13T23:29:07.787Z",
+        "updated_at": "2023-07-13T23:29:07.787Z"
+    },
+    {
+        "id": 12,
+        "date": "2023-07-14",
+        "distance": 13,
+        "time": 2,
+        "user_id": 5,
+        "created_at": "2023-07-13T23:29:31.589Z",
+        "updated_at": "2023-07-13T23:29:31.589Z"
+    }
+]
+```  
 ## Get a jog    
   GET: /users/:id      
   Parameters: Authorization: JWT token  
+    ```
+Response: {
+    "id": 11,
+    "date": "2023-07-14",
+    "distance": 14,
+    "time": 3,
+    "user_id": 5,
+    "created_at": "2023-07-13T23:29:07.787Z",
+    "updated_at": "2023-07-13T23:29:07.787Z"
+}
+```  
 
 ## Add  jog    
   POST: /users/      
@@ -135,6 +190,17 @@ ___
       "distance": 8888,
       "time": 8
       }
+  ```
+Response: {
+    "id": 13,
+    "date": "2023-07-14",
+    "distance": 15,
+    "time": 6,
+    "user_id": 5,
+    "created_at": "2023-07-13T23:31:36.767Z",
+    "updated_at": "2023-07-13T23:31:36.767Z"
+}
+```  
   
 ## Update jog    
   PUT: /jogs/:id      
@@ -143,19 +209,63 @@ ___
       "date": "13/7/2023",
       "distance": 8888,
       "time": 8
-      } 
+      }
+  ```
+Response: {
+    "user_id": 5,
+    "time": 4,
+    "id": 11,
+    "date": "2023-07-14",
+    "distance": 14,
+    "created_at": "2023-07-13T23:29:07.787Z",
+    "updated_at": "2023-07-13T23:32:25.940Z"
+}
+```  
 
 ## Delete a jog      
   DELETE: /jogs/:id      
-  Parameters: Authorization: JWT token        
+  Parameters: Authorization: JWT token
+  ```
+Response: {
+    "id": 11,
+    "date": "2023-07-14",
+    "distance": 14,
+    "time": 4,
+    "user_id": 5,
+    "created_at": "2023-07-13T23:29:07.787Z",
+    "updated_at": "2023-07-13T23:32:25.940Z"
+}
+```        
 
 ## Get average distances per week    
   GET: /jogs/average_distance       
-  Parameters: Authorization: JWT token       
+  Parameters: Authorization: JWT token
+  ```
+Response: {
+    "2023-07-09": 28,
+    "2023-07-16": 20
+}
+```  
 
 ## Get average speed per week    
   GET: /jogs/average_speed    
-  Parameters: Authorization: JWT token   
+  Parameters: Authorization: JWT token
+  ```
+Response:{
+    "distance": {
+        "2023-07-09": 28,
+        "2023-07-16": 20
+    },
+    "time": {
+        "2023-07-09": 8,
+        "2023-07-16": 4
+    },
+    "speed": [
+        3,
+        2
+    ]
+}
+```  
 
 ## Filter by date    
   POST: /jogs/filter      
@@ -164,6 +274,28 @@ ___
       "from": "13/7/2023",
       "to": "14/7/2023",
       }
+  ```
+Response: [
+    {
+        "id": 12,
+        "date": "2023-07-14",
+        "distance": 13,
+        "time": 2,
+        "user_id": 5,
+        "created_at": "2023-07-13T23:29:31.589Z",
+        "updated_at": "2023-07-13T23:29:31.589Z"
+    },
+    {
+        "id": 13,
+        "date": "2023-07-14",
+        "distance": 15,
+        "time": 6,
+        "user_id": 5,
+        "created_at": "2023-07-13T23:31:36.767Z",
+        "updated_at": "2023-07-13T23:31:36.767Z"
+    }
+]
+```  
 ___   
 
 # Examples
