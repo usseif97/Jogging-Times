@@ -172,7 +172,7 @@ Response:[
 ## Get a jog    
   GET: /users/:id      
   Parameters: Authorization: JWT token  
-    ```
+    ```   
 Response: {
     "id": 11,
     "date": "2023-07-14",
@@ -192,7 +192,7 @@ Response: {
       "distance": 8888,
       "time": 8
       }
-  ```
+  ```     
 Response: {
     "id": 13,
     "date": "2023-07-14",
@@ -211,7 +211,7 @@ Response: {
       "distance": 8888,
       "time": 8
       }
-  ```
+  ```      
 Response: {
     "user_id": 5,
     "time": 4,
@@ -226,7 +226,7 @@ Response: {
 ## Delete a jog      
   DELETE: /jogs/:id      
   Parameters: Authorization: JWT token
-  ```
+  ```        
 Response: {
     "id": 11,
     "date": "2023-07-14",
@@ -236,22 +236,22 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
-```           
+```            
 
 ## Get average distances per week    
   GET: /jogs/average_distance       
   Parameters: Authorization: JWT token
-  ```
+  ```      
 Response: {
     "2023-07-09": 28,
     "2023-07-16": 20
 }
-```     
+```      
 
 ## Get average speed per week    
   GET: /jogs/average_speed    
   Parameters: Authorization: JWT token
-  ```
+  ```        
 Response:{
     "distance": {
         "2023-07-09": 28,
@@ -266,7 +266,7 @@ Response:{
         2
     ]
 }
-```      
+```       
 
 ## Filter by date    
   POST: /jogs/filter      
@@ -275,7 +275,7 @@ Response:{
       "from": "13/7/2023",
       "to": "14/7/2023",
       }
-  ```
+  ```    
 Response: [
     {
         "id": 12,
