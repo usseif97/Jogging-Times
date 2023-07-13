@@ -167,12 +167,12 @@ Response:[
         "updated_at": "2023-07-13T23:29:31.589Z"
     }
 ]
-```
+```     
 
 ## Get a jog    
   GET: /users/:id      
   Parameters: Authorization: JWT token  
-    ```   
+    ```       
 Response: {
     "id": 11,
     "date": "2023-07-14",
@@ -182,7 +182,7 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:29:07.787Z"
 }
-```  
+```     
 
 ## Add  jog    
   POST: /users/      
