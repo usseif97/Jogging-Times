@@ -125,7 +125,7 @@ ___
 
 ## Add  jog    
   POST: /users/      
-  Parameters: Authorization: JWT token
+  Parameters: Authorization: JWT token     
   body: {
       "date": "13/7/2023",
       "distance": 8888,
