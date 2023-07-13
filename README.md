@@ -396,8 +396,8 @@ Response: [
 ___   
 
 # Examples
-![1](https://github.com/usseif97/Jogging-Times/assets/47598030/4954f2cb-bf24-4423-ba91-a597445aee07)    
-   
+![1](https://github.com/usseif97/Jogging-Times/assets/47598030/75deda15-ea90-4195-8e21-aaf752cbc39f)    
+
 ![2](https://github.com/usseif97/Jogging-Times/assets/47598030/0f3d7edd-542f-4cfc-9722-f03cb3e98d36)   
    
 ![3](https://github.com/usseif97/Jogging-Times/assets/47598030/0c6d3abf-6882-40a7-8cd6-3bf430cb8bee)  
