@@ -111,6 +111,10 @@ Response: {
 ```
   DELETE: /logout   
   Parameters: Authorization: JWT token
+response: {
+    "status": 200,
+    "message": "Logged out successfully."
+}
 ```    
 ___
 
@@ -119,12 +123,50 @@ ___
 ```
   GET: /users    
   Parameters: Authorization: JWT token
+response: [
+    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "user"
+    },
+    {
+        "id": 3,
+        "email": "youssef@test.com",
+        "created_at": "2023-07-13T21:26:56.216Z",
+        "updated_at": "2023-07-13T21:31:23.150Z",
+        "name": "youssef",
+        "jti": "b8badc47-310b-49d1-9e06-2f5c5eabed12",
+        "role": "manager"
+    },
+    {
+        "id": 5,
+        "email": "youssefali@test.com",
+        "created_at": "2023-07-13T23:26:12.988Z",
+        "updated_at": "2023-07-13T23:26:12.988Z",
+        "name": "youssefAli",
+        "jti": "6496479b-e37d-47af-8fb7-a06c72585dd4",
+        "role": "user"
+    }
+]
 ```   
   
 ## Get a user   
 ```
   GET: /users/:id      
   Parameters: Authorization: JWT token
+response:    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "user"
+    }
 ```
   
 ## Update user    
@@ -134,25 +176,61 @@ ___
   Body: "user":{   
         "email": "admintest@test.com",   
         "password": "adminpassword"   
-        }   
+        }
+response:    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "user"
+    }
 ```
 
 ## Delete a user      
 ```
   DELETE: /users/:id      
-  Parameters: Authorization: JWT token        
+  Parameters: Authorization: JWT token
+response:    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "user"
+    }      
 ```
 
 ## Make a user manager    
 ```
   GET: /users/role/manager       
-  Parameters: Authorization: JWT token       
+  Parameters: Authorization: JWT token
+response:    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "manager"
+    }     
 ```
 
 ## Make a user admin    
 ```
   GET: /users/role/admin    
   Parameters: Authorization: JWT token
+response:    {
+        "id": 1,
+        "email": "test@test.com",
+        "created_at": "2023-07-11T17:15:41.338Z",
+        "updated_at": "2023-07-11T17:15:41.338Z",
+        "name": "test",
+        "jti": "ab83481f-b7be-451a-a317-bc816d14e1e1",
+        "role": "admin"
+    }
 ```
 ___
 
