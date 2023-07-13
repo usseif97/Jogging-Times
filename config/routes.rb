@@ -3,6 +3,7 @@ Rails.application.routes.draw do
     collection do
       get 'average_distance'
       get 'average_speed'
+      post 'filter'
     end
   end
   devise_for :users, path: '', path_names: {
