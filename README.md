@@ -62,14 +62,14 @@ gem "groupdate"
 
 # Registartion
 ## Signup
-  POST: /signup            
+  POST: /signup    
+    ```
   Body: "user":{   
         "email": "admintest@test.com",   
         "password": "adminpassword",   
         "name": "admintest"   
         }   
   header:  JWT token    
-  ```
 Response: {
     "status": {
         "code": 200,
@@ -86,13 +86,13 @@ Response: {
    
   
 ## Login   
-  POST: /login     
+  POST: /login
+  ```
   Body: "user":{   
         "email": "admintest@test.com",    
         "password": "adminpassword"   
         }   
   header:  JWT token    
-  ```
 Response: {
     "status": {
         "code": 200,
