@@ -63,7 +63,6 @@ gem "groupdate"
 # Registartion
 ## Signup
   POST: /signup    
-    ```
   Body: "user":{   
         "email": "admintest@test.com",   
         "password": "adminpassword",   
@@ -82,12 +81,10 @@ Response: {
         "role": "user"
     }
 }
-```
    
   
 ## Login   
   POST: /login
-  ```
   Body: "user":{   
         "email": "admintest@test.com",    
         "password": "adminpassword"   
@@ -105,7 +102,6 @@ Response: {
         "role": "user"
     }
 }
-```
 
 ## Logout
   DELETE: /logout   
@@ -145,7 +141,6 @@ ___
 # Jogs
 ## Get all jogs  
   GET: /jogs
-  ```
   Parameters: Authorization: JWT token     
 Response:[
     {
@@ -167,11 +162,9 @@ Response:[
         "updated_at": "2023-07-13T23:29:31.589Z"
     }
 ]
-```     
 
 ## Get a jog    
   GET: /users/:id
-    ```          
   Parameters: Authorization: JWT token  
 Response: {
     "id": 11,
@@ -182,11 +175,9 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:29:07.787Z"
 }
-```     
 
 ## Add  jog    
   POST: /users/   
-    ```     
   Parameters: Authorization: JWT token     
   body: {
       "date": "13/7/2023",
@@ -202,10 +193,9 @@ Response: {
     "created_at": "2023-07-13T23:31:36.767Z",
     "updated_at": "2023-07-13T23:31:36.767Z"
 }
-```         
+
 ## Update jog    
   PUT: /jogs/:id
-  ```      
   Parameters: Authorization: JWT token     
   body: {
       "date": "13/7/2023",
@@ -221,11 +211,9 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
-```      
 
 ## Delete a jog      
   DELETE: /jogs/:id
-  ```           
   Parameters: Authorization: JWT token
 Response: {
     "id": 11,
@@ -236,21 +224,17 @@ Response: {
     "created_at": "2023-07-13T23:29:07.787Z",
     "updated_at": "2023-07-13T23:32:25.940Z"
 }
-```            
 
 ## Get average distances per week    
   GET: /jogs/average_distance
-  ```       
   Parameters: Authorization: JWT token
 Response: {
     "2023-07-09": 28,
     "2023-07-16": 20
 }
-```      
 
 ## Get average speed per week    
   GET: /jogs/average_speed
-  ```        
   Parameters: Authorization: JWT token
 Response:{
     "distance": {
@@ -266,11 +250,9 @@ Response:{
         2
     ]
 }
-```       
 
 ## Filter by date    
   POST: /jogs/filter
-  ```        
   Parameters: Authorization: JWT token
   body: {
       "from": "13/7/2023",
@@ -296,7 +278,6 @@ Response: [
         "updated_at": "2023-07-13T23:31:36.767Z"
     }
 ]
-```      
 ___   
 
 # Examples
