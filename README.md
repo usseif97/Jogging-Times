@@ -208,7 +208,7 @@ response:    {
 
 ## Make a user manager    
 ```
-  GET: /users/role/manager       
+  PUT: /users/role/manager       
   Parameters: Authorization: JWT token
 response:    {
         "id": 1,
@@ -223,7 +223,7 @@ response:    {
 
 ## Make a user admin    
 ```
-  GET: /users/role/admin    
+  PUT: /users/role/admin    
   Parameters: Authorization: JWT token
 response:    {
         "id": 1,
@@ -417,7 +417,7 @@ ___
 ![10](https://github.com/usseif97/Jogging-Times/assets/47598030/c45bbd7f-13a8-44ab-b5b9-7662a54de636)   
 
 # promote to Admin
-![11](https://github.com/usseif97/Jogging-Times/assets/47598030/65478309-f686-4cd2-867b-17c5828efb6f)    
+![11](https://github.com/usseif97/Jogging-Times/assets/47598030/cbc4002d-8432-4efe-aaea-66b04ed5212d)     
 
 ![12](https://github.com/usseif97/Jogging-Times/assets/47598030/956e3c34-1972-4989-a97b-995a2c5196a0)   
 
