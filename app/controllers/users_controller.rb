@@ -21,7 +21,7 @@ class UsersController < ApplicationController
         end 
     end
 
-    # GET /users/manager
+    # UPDATE /users/manager
     def create_manager
         current_user.role = "manager"
         @user = current_user
@@ -32,7 +32,7 @@ class UsersController < ApplicationController
         end
     end
 
-    # GET /users/admin
+    # UPDATE /users/admin
     def create_admin
         current_user.role = "admin"
         @user = current_user

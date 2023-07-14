@@ -18,8 +18,8 @@ Rails.application.routes.draw do
 
   get 'users', to: 'users#index'
   get 'users/:id', to: 'users#show'
-  get 'users/role/manager', to: 'users#create_manager'
-  get 'users/role/admin', to: 'users#create_admin'
+  put 'users/role/manager', to: 'users#create_manager'
+  put 'users/role/admin', to: 'users#create_admin'
   put 'users/:id', to: 'users#update'
   delete 'users/:id', to: 'users#destroy'
 end
